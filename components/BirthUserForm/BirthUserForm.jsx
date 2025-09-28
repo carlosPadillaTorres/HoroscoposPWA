@@ -1,17 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BirthUserForm.css";
-import Swal from "sweetalert2";
 
 const BirthUserForm = () => {
-  const alertWarning = () => {
-    Swal.fire({
-      icon: "warning",
-      title: "Espera!",
-      text: "Si instalarás la aplicación en tu dispositivo, recuerda no usar Firefox ni Opera",
-    });
-  };
-  alertWarning();
+  
 
   const [userName, setUserName] = useState("");
   const [birthDate, setBirthDate] = useState("2025-09-24");
